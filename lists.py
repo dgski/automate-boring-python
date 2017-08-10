@@ -17,3 +17,21 @@ def stringer(listofthings):
 
 print(stringer(spam))
 
+#Character Picture Grid: take list of lists and print it out transformed
+grid = [['.', '.', '.', '.', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['.', 'O', 'O', 'O', 'O', 'O'],
+        ['O', 'O', 'O', 'O', 'O', '.'],
+        ['O', 'O', 'O', 'O', '.', '.'],
+        ['.', 'O', 'O', '.', '.', '.'],
+        ['.', '.', '.', '.', '.', '.']]
+
+print(grid)
+print()
+
+for i in range(len(grid[0])):
+	for n in range(len(grid)):
+		print(grid[n][i], end='')
+	print()
